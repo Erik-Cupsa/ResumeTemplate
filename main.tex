@@ -1,0 +1,175 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Large \scshape Michael Scott} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(111) 123-4567} ~ 
+    {\faEnvelope\  \underline{mscott@gmail.com}} ~ 
+    {\faLinkedin\ \underline{linkedin.com/in/m-scott }}  ~
+    {\faGithub\ \underline{github.com/m-scott}} ~
+    {\faBriefcase\ \underline{michaels-portfolio.netlify.app/}}
+    \vspace{-8pt}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education} \\[2mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University}{Sep 2021 -- Dec 2025}
+      {Bachelor of Computer Engineering, Minor Software Engineering
+      }{Location}
+  \resumeSubHeadingListEnd
+    {Golden Key Member Distinction (Top 15 \%) | \textbf{CGPA: 3.8}}
+    \vspace{-5pt}
+
+%-----------Experience---------------
+\section{Work Experience}
+\resumeSubHeadingListStart
+\resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Software Engineer Intern}{Remote} 
+\resumeItemListStart
+\resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
+\resumeItem{Implemented \textbf{15+} serverless workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman}, resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
+\resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
+\resumeItem{Engineered a \textbf{Python} code that automates the downloading of Lambda, Step Function, and API code for publication to \textbf{Git} repositories, resulting in a time-saving of \textbf{2 hours} per deployment}
+\resumeItem{Developed a centralized \textbf{Power BI} dashboard utilizing \textbf{SQL} and \textbf{DAX} to streamline execution management for \textbf{50+} users and seamlessly integrate real-time insights from \textbf{DynamoDB}}
+\resumeItemListEnd
+\resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Remote}
+\resumeItemListStart
+\resumeItem{Automated documentation on \textbf{Azure} by constructing a custom \textbf{Python pipeline} to convert PDF and word files to Markdown syntax, saving \textbf{95\%} of wiki writing time}
+\resumeItem{Engineered \textbf{Python} code to efficiently extract and process \textbf{100+} codes from a \textbf{data lake}, seamlessly integrating them into a \textbf{pipeline} for subsequent extraction and analysis, streamlining data workflows and enhancing data utilization}
+\resumeItem{Centralized the code base for \textbf{15+} software developers on \textbf{Azure}, using \textbf{SQL} for database management, resulting in streamlined collaboration, efficient version control, and improved coordination}
+\resumeItem{Designed a custom repository to transition code to the cloud using \textbf{Azure}, increasing accessibility for all employers and saving the company \textbf{50+} hours per week}
+\resumeItemListEnd
+
+\vspace{-5pt}
+
+%-----------PROJECTS-----------
+\section{Projects} 
+\vspace{-5pt}
+\resumeSubHeadingListStart
+\resumeProjectHeading
+{\textbf{{Premier Zone Fantasy}} $|$ \emph{\href{https://premierzone.netlify.app/}{Website}{ $|$ }\href{https://github.com/michael-scott/PLWebsite}{Source Code}}}{ReactJS $|$ SpringBoot $|$ SQL}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Engineered a comprehensive \textbf{data scraping} of match statistics for \textbf{700+} players using \textbf{Python} and \textbf{pandas}, followed by dynamic manipulation and presentation of the data through a \textbf{Spring Boot} application}
+\resumeItem{Implemented real-time data manipulation within a \textbf{Postgres} database through the effective use of \textbf{SQL} queries, establishing a seamless integration with a user-friendly \textbf{ReactJS} interface}
+\resumeItemListEnd 
+\vspace{-17pt}
+\resumeProjectHeading
+{\textbf{{Study Smart Bot}} $|$ \emph{\href{https://studysmartbot.netlify.app/}{Website}{ $|$ }\href{https://github.com/michael-scott/StudySmartBot}{Source Code}}}{ReactJS $|$ NodeJS $|$ API}
+\\[5mm]
+\resumeItemListStart
+\resumeItem{Developed an intuitive \textbf{ReactJS} application tailored for a collaborative learning environment, seamlessly connecting with the back-end to facilitate synchronized video watching using the \textbf{YouTube API} and \textbf{Web Sockets}}
+\resumeItem{Engineered an innovative chat bot solution leveraging \textbf{NodeJS} and the \textbf{OpenAI API}, hosting it as an \textbf{EC2 instance} on \textbf{AWS} for serverless deployment}
+\resumeItemListEnd 
+\resumeSubHeadingListEnd
+\vspace{-10pt}
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+\begin{itemize}[leftmargin=0.15in, label={}]
+\small{
+\item{\textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, C, VHDL} \\[1mm]}
+\item{\textbf{Developer Tools}{: Postman, PowerBI, Git} \\[1mm]}
+\item{\textbf{Libraries/Frameworks}{: AWS, ReactJS, PostgreSQL, Spring Boot, NodeJS, Azure, Docker, Drools} \\ [1mm]}
+}
+\end{itemize}
+\vspace{-16pt}
+\vspace{3pt}
+\vspace{10pt}
+
+\vspace{-15pt}
+
+\end{document}
