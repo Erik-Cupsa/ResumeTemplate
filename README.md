@@ -30,7 +30,7 @@ This repository contains a LaTeX template for a professional software engineer r
 
 4. **Compile the Resume:**
 
-    - Compile the LaTeX file (`resume.tex`) using your LaTeX distribution.
+    - Compile the LaTeX file (`main.tex`) using your LaTeX distribution.
     - This will generate the PDF output (`resume.pdf`) with your updated resume.
 
 5. **Preview and Print:**
