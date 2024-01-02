@@ -13,7 +13,7 @@ This repository contains a LaTeX template for a professional software engineer r
 
 ## How to Use
 
-1. **Prerequisites:** Install LaTeX distribution (e.g., TeX Live, MiKTeX).
+1. **Prerequisites:** Install LaTeX distribution (e.g., TeX Live, MiKTeX), or create an Overleaf account.
 
 2. **Clone the Repository:**
 
@@ -21,6 +21,8 @@ This repository contains a LaTeX template for a professional software engineer r
     git clone https://github.com/yourusername/software-engineer-resume.git
     cd software-engineer-resume
     ```
+
+    - You can also simply copy paste this into Overleaf!
 
 3. **Edit the Resume:**
 
