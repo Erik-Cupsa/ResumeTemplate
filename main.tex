@@ -18,6 +18,7 @@
 \input{glyphtounicode}
 \usepackage[margin=1.4cm]{geometry}
 
+
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
 \fancyfoot{}
@@ -26,7 +27,7 @@
 
 % Adjust margins
 \addtolength{\oddsidemargin}{-0.15in}
-\addtolength{\textwidth}{0.3in}
+ \addtolength{\textwidth}{0.3in}
 
 \urlstyle{same}
 
@@ -84,9 +85,11 @@
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
 
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}\vspace{0pt}}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
 
 \begin{document}
 
@@ -94,82 +97,107 @@
 \begin{center}
     {\Large \scshape Michael Scott} \\[2mm]
     \footnotesize \raisebox{-0.1\height}
-    \faPhone\ \underline{(111) 123-4567} ~ 
-    {\faEnvelope\  \underline{mscott@gmail.com}} ~ 
-    {\faLinkedin\ \underline{linkedin.com/in/m-scott }}  ~
-    {\faGithub\ \underline{github.com/m-scott}} ~
-    {\faBriefcase\ \underline{michaels-portfolio.netlify.app/}}
+    \faPhone\ \underline{(123) 456-7890} ~ 
+    {\faEnvelope\  \underline{mscott@example.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/michael-scott/}{linkedin.com/in/michael-scott}}  ~
+    {\faGithub\ \underline{\href{https://github.com/m-scott}{github.com/m-scott}} ~
+    {\faBriefcase\ \underline{\href{https://mscott-portfolio.vercel.app/}{mscott-portfolio.vercel.app/}}
     \vspace{-8pt}
 \end{center}
 
-%-----------EDUCATION-----------
-\section{Education} \\[2mm]
+ %-----------EDUCATION-----------
+\section{Education} \\[1mm]
   \resumeSubHeadingListStart
     \resumeSubheading
-      {University}{Sep 2021 -- Dec 2025}
-      {Bachelor of Computer Engineering, Minor Software Engineering
+      {University}{Expected Graduation: May 2026}
+      {Bachelor of Computer Engineering | Minor Artificial Intelligence
       }{Location}
   \resumeSubHeadingListEnd
-    {Golden Key Member Distinction (Top 15 \%) | \textbf{CGPA: 3.8}}
-    \vspace{-5pt}
-
+    \resumeItemListStart
+        \resumeItem {Golden Key Honours Scholar | \textbf{GPA: 3.78}}
+        \vspace{-7pt}
+        \resumeItem {Courses: Software Engineering Practice, Applied Machine Learning, Operating Systems, Computer Architecture, Model-Based Programming, Algorithms and Data Structures, Intro. to Software Engineering}
+    \resumeItemListEnd
+    \vspace{-12pt}
 %-----------Experience---------------
 \section{Work Experience}
-\resumeSubHeadingListStart
-\resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Software Engineer Intern}{Remote} 
-\resumeItemListStart
-\resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
-\resumeItem{Implemented \textbf{15+} serverless workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman}, resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
-\resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
-\resumeItem{Engineered a \textbf{Python} code that automates the downloading of Lambda, Step Function, and API code for publication to \textbf{Git} repositories, resulting in a time-saving of \textbf{2 hours} per deployment}
-\resumeItem{Developed a centralized \textbf{Power BI} dashboard utilizing \textbf{SQL} and \textbf{DAX} to streamline execution management for \textbf{50+} users and seamlessly integrate real-time insights from \textbf{DynamoDB}}
-\resumeItemListEnd
-\resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Remote}
-\resumeItemListStart
-\resumeItem{Automated documentation on \textbf{Azure} by constructing a custom \textbf{Python pipeline} to convert PDF and word files to Markdown syntax, saving \textbf{95\%} of wiki writing time}
-\resumeItem{Engineered \textbf{Python} code to efficiently extract and process \textbf{100+} codes from a \textbf{data lake}, seamlessly integrating them into a \textbf{pipeline} for subsequent extraction and analysis, streamlining data workflows and enhancing data utilization}
-\resumeItem{Centralized the code base for \textbf{15+} software developers on \textbf{Azure}, using \textbf{SQL} for database management, resulting in streamlined collaboration, efficient version control, and improved coordination}
-\resumeItem{Designed a custom repository to transition code to the cloud using \textbf{Azure}, increasing accessibility for all employers and saving the company \textbf{50+} hours per week}
-\resumeItemListEnd
-
-\vspace{-5pt}
+    \resumeSubHeadingListStart
+                \resumeSubheading{Tech Company}{May 2024 -- Sep 2024}{Machine Learning Engineer Intern}{Location} 
+                \resumeItemListStart
+                    \resumeItem{Engineered \textbf{Large Language Models (LLMs)}, including \textbf{BERT} and \textbf{Attention Models}, to analyze software engineering requirements and generate accurate dependency lists, improving project planning efficiency by \textbf{37\%}}
+                    \resumeItem{Analyzed \textbf{1200+} software requirements monthly using \textbf{scikit-learn (classification models)}, \textbf{spaCy}, and \textbf{NLTK} in \textbf{Python}, saving the company \textbf{\$20,000 annually} by decreasing project lead times}
+                    \resumeItem{Integrated \textbf{TF-IDF vectorization} to detect similarities in software requirements, focusing on \textbf{preprocessing}, \textbf{model training}, \textbf{hyperparameter tuning} and \textbf{clustering} to optimize \textbf{NLP} analysis processes}
+                    \resumeItemListEnd
+            \resumeSubheading{Tech Company}{May 2023 -- Sep 2023}{Backend Engineer Intern}{Location} 
+                \resumeItemListStart
+                    \resumeItem{Designed \textbf{30+ AWS Lambda Functions}, strategically leveraging \textbf{Lambda layers} to increase processing speed by \textbf{35\%} and re-usability by \textbf{52\%}, resulting in cost savings of \textbf{\$1,000} per large scale deployment}
+                    \resumeItem{Implemented \textbf{15+} server less workflows using \textbf{AWS Step Functions}, seamlessly integrating \textbf{REST APIs} and rigorously tested with \textbf{Postman},  resulting in a \textbf{65\%} reduction in execution time and enhanced operational efficiency}
+                    \resumeItem{Crafted a \textbf{Spring Boot} application with a \textbf{Drools} logic engine, containerized it using \textbf{Docker}, and seamlessly deployed it on \textbf{AWS} using \textbf{EC2}, strategically allocating cloud resources to ensure enhanced scalability and reliability}
+                    \resumeItemListEnd
+            \resumeSubheading{Tech Company}{Jun 2022 -- Sep 2022}{Software Engineer Intern}{Location}
+                \resumeItemListStart
+                    \resumeItem{Programmed and deployed a \textbf{Python}-based data migration pipeline on \textbf{Azure}, achieving a \textbf{50\% reduction} in transfer time for \textbf{100+ terabytes} of critical business data}
+                    \resumeItem{Centralized a \textbf{SQL} database infrastructure on \textbf{Azure}, enhancing data accessibility and security for \textbf{50+ stakeholders}, resulting in a \textbf{30\% improvement} in query performance across the organization}
+                    \resumeItemListEnd
+    \resumeSubHeadingListEnd
+    \vspace{-12pt}
 
 %-----------PROJECTS-----------
 \section{Projects} 
-\vspace{-5pt}
-\resumeSubHeadingListStart
-\resumeProjectHeading
-{\textbf{{Premier Zone Fantasy}} $|$ \emph{\href{https://premierzone.netlify.app/}{Website}{ $|$ }\href{https://github.com/michael-scott/PLWebsite}{Source Code}}}{ReactJS $|$ SpringBoot $|$ SQL}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+    \resumeProjectHeading
+            {\textbf{{McGill Scheduler}} $|$ \emph{\href{https://mcgillscheduler.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/McGill-Scheduler}{Source Code}}}{ReactJS $|$ Spring Boot $|$ PostgreSQL}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Developed and deployed a full-stack web application that enhanced academic experiences of \textbf{1,000+ McGill students}}
+            \resumeItem{Utilized \textbf{PostgreSQL} for data storage, \textbf{Spring Boot} for a \textbf{RESTful API} backend, and \textbf{ReactJS} for the user interface}
+          \resumeItemListEnd
+ \vspace{-20pt}
+ \resumeProjectHeading
+            {\textbf{{Empor}} $|$ \emph{\href{https://empor.ca/}{Website}}}{NextJS $|$ TypeScript $|$ Spring Boot}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{\textbf{Led the development} of a full-stack marketplace application for \textbf{1,000+ university students}, utilizing \textbf{NextJS} and \textbf{TypeScript} for the frontend, \textbf{Prisma} as the ORM, \textbf{Supabase} for the database, and a \textbf{Spring Boot} backend}
+          \resumeItemListEnd
+ \vspace{-17pt}
+ \resumeProjectHeading
+{\textbf{{Premier League Match Predictor}} $|$ \emph{\href{https://premierzone.vercel.app/}{Website}{ $|$ }\href{https://github.com/Erik-Cupsa/PLWebsite}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
 \\[5mm]
 \resumeItemListStart
-\resumeItem{Engineered a comprehensive \textbf{data scraping} of match statistics for \textbf{700+} players using \textbf{Python} and \textbf{pandas}, followed by dynamic manipulation and presentation of the data through a \textbf{Spring Boot} application}
-\resumeItem{Implemented real-time data manipulation within a \textbf{Postgres} database through the effective use of \textbf{SQL} queries, establishing a seamless integration with a user-friendly \textbf{ReactJS} interface}
-\resumeItemListEnd 
-\vspace{-17pt}
-\resumeProjectHeading
-{\textbf{{Study Smart Bot}} $|$ \emph{\href{https://studysmartbot.netlify.app/}{Website}{ $|$ }\href{https://github.com/michael-scott/StudySmartBot}{Source Code}}}{ReactJS $|$ NodeJS $|$ API}
-\\[5mm]
-\resumeItemListStart
-\resumeItem{Developed an intuitive \textbf{ReactJS} application tailored for a collaborative learning environment, seamlessly connecting with the back-end to facilitate synchronized video watching using the \textbf{YouTube API} and \textbf{Web Sockets}}
-\resumeItem{Engineered an innovative chat bot solution leveraging \textbf{NodeJS} and the \textbf{OpenAI API}, hosting it as an \textbf{EC2 instance} on \textbf{AWS} for serverless deployment}
-\resumeItemListEnd 
+\resumeItem{Created a model to predict matches, integrating \textbf{data scraping} with \textbf{pandas} and \textbf{machine learning} with \textbf{scikit-learn}}
+\resumeItemListEnd
+
 \resumeSubHeadingListEnd
-\vspace{-10pt}
-
-
-%-----------PROGRAMMING SKILLS-----------
+\vspace{-28pt}
+%-----------LEADERSHIP-----------
+\section{Leadership} 
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+                   \resumeProjectHeading
+            {\textbf{{SWErikCodes}} $|$\emph{{\href{https://www.tiktok.com/@swerikcodes?lang=en}{ TikTok $|$}\href{https://www.youtube.com/channel/UCgKFOz_KrMbmypWrawtzDQg}{ YouTube $|$}\href{https://www.instagram.com/swerikcodes/}{ Instagram}}}}{Jun 2023 -- Present}
+            \\[5mm]
+          \resumeItemListStart
+            \resumeItem{Created educational coding content for \textbf{75,000+} developers, with \textbf{4,200,000+} impressions per month}
+            \resumeItem{Produced coding tutorials on advanced topics such as \textbf{data structures}, \textbf{algorithms}, and \textbf{software design principles}}
+          \resumeItemListEnd
+          \resumeSubHeadingListEnd
+ \vspace{-12pt}
+  %-----------PROGRAMMING SKILLS-----------
 \section{Technical Skills}
-\begin{itemize}[leftmargin=0.15in, label={}]
-\small{
-\item{\textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, C, VHDL} \\[1mm]}
-\item{\textbf{Developer Tools}{: Postman, PowerBI, Git} \\[1mm]}
-\item{\textbf{Libraries/Frameworks}{: AWS, ReactJS, PostgreSQL, Spring Boot, NodeJS, Azure, Docker, Drools} \\ [1mm]}
-}
-\end{itemize}
-\vspace{-16pt}
-\vspace{3pt}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+     \textbf{Languages}{: Python, Java, SQL, HTML5, CSS, JavaScript, Go, C, VHDL} \\[1mm]
+     \textbf{Developer Tools}{: AWS, Postman, PowerBI, Git, Azure, Docker, Jira} \\[1mm]
+     \textbf{Libraries/Frameworks}{: Spring Boot, ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+    }}
+ \end{itemize}
+ \vspace{-16pt}
+ \vspace{3pt}
 \vspace{10pt}
 
 \vspace{-15pt}
+
+
 
 \end{document}
